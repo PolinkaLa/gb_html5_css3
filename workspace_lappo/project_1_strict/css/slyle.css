@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: Lato;
+  font-weight: 400;
+}
+header,
+section,
+footer {
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+header {
+  height: 10vh;
+  background-color: #f6f9f9;
+}
+.call-to-action {
+  height: 90vh;
+  background: url(../img/style/call-to-action_bg.jpg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: space-evenly;
+}
+.call-to-action h1 {
+  color: #ffffff;
+  font-size: 7.5em;
+}
+.call-to-action p {
+  color: #ffffff;
+  font-size: 1.25em;
+  margin-bottom: 65px;
+}
+.call-to-action hr {
+  background: #15a4fa;
+  width: 50%;
+  height: 2px;
+  border: none;
+  margin: 35px auto;
+}
+.call-to-action .btn {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #15a4fa;
+  background-color: #15a4fa;
+  color: #ffffff;
+  font-size: 1.25em;
+  line-height: 2.35;
+  text-align: center;
+}
+.call-to-action .btn:hover {
+  text-decoration: underline;
+}
+.call-to-action .call {
+  display: block;
+  text-decoration: none;
+  width: 176px;
+  height: 54px;
+  margin: 0 auto;
+}
+.description,
+.point {
+  height: 50vh;
+  text-align: center;
+  background-color: #f6f9f9;
+}
+.description h2 {
+  color: #2d3950;
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.description p {
+  color: #999999;
+  font-size: 1.25em;
+  text-align: center;
+}
+.point {
+  flex-direction: row;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.point article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+}
+.point article h3 {
+  color: #2d3950;
+  font-size: 1.375em;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 22px;
+}
+.point article p {
+  color: #999999;
+  font-size: 0.938em;
+  line-height: 1.467;
+  text-align: center;
+}
+.point article figure {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(90deg, #48baff 50%, #5fc3ff 50%);
+}
+.point figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.photo-gallary {
+  height: 100vh;
+  background-color: #f6f9f9;
+  text-align: center;
+  justify-content: space-around;
+}
+.photo-gallary h2 {
+  color: #2d3950;
+  font-size: 2.563em;
+  margin-bottom: 20px;
+}
+.photo-gallary p {
+  color: #909090;
+  font-size: 0.938em;
+  line-height: 1.533;
+}
+.photo-gallary .gallary {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.photo-gallary .gallary figure {
+  margin-bottom: 30px;
+}
+.contact-us {
+  height: 70vh;
+  background: url(../img/style/BG.png) no-repeat;
+  background-size: cover;
+  text-align: center;
+  justify-content: space-around;
+}
+.contact-us h2 {
+  color: #ffffff;
+  font-size: 2.563em;
+  margin-bottom: 20px;
+}
+.contact-us p {
+  color: #999999;
+  font-size: 0.938em;
+  line-height: 1.533;
+}
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #999999;
+  background-color: rgba(246, 249, 249, 0);
+  height: 62px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding: 20px;
+  width: 100%;
+  font-size: 0.938em;
+}
+.contact-us textarea {
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 30%;
+  max-height: 30%;
+  resize: none;
+}
+.contact-us input[type="text"]:focus,
+.contact-us input[type="email"]:focus,
+.contact-us textarea:focus,
+.contact-us input[type="text"]:active,
+.contact-us input[type="email"]:active,
+.contact-us textarea:active {
+  outline: 1px solid #ffffff;
+}
+.contact-us input[type="submit"] {
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #15a4fa;
+  background-color: #15a4fa;
+  width: 140px;
+  height: 45px;
+  color: #ffffff;
+  font-size: 1.25em;
+  line-height: 2;
+  text-align: center;
+}
+.contact-us input[type="submit"]:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 10vh;
+  background-color: #f6f9f9;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+footer .copy-text {
+  color: #999999;
+  text-align: left;
+}
