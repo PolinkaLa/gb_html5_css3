@@ -158,7 +158,41 @@ header{
         
         figure {
             margin-bottom: 30px;
+            position: relative
         }
+        .hover-block {
+            display: none;
+            background: rgba(21, 164, 250, 0.9);
+            
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            .big {
+                background: url(../img/style/big.png) no-repeat center;
+                margin-right: 5px;
+            }
+            .open {
+                background: url(../img/style/link.png) no-repeat center;
+                margin-left: 5px;
+            }
+            a {
+                height: 42px;
+                width: 42px;
+                display: block;
+                text-decoration: none;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                border-radius: 4px;
+            }
+        }
+        figure:hover .hover-block{
+            display: flex;
+        } 
     }
 }
 

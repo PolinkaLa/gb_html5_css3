@@ -144,6 +144,38 @@ header {
 }
 .photo-gallary .gallary figure {
   margin-bottom: 30px;
+  position: relative;
+}
+.photo-gallary .gallary .hover-block {
+  display: none;
+  background: rgba(21, 164, 250, 0.9);
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.photo-gallary .gallary .hover-block .big {
+  background: url(../img/style/big.png) no-repeat center;
+  margin-right: 5px;
+}
+.photo-gallary .gallary .hover-block .open {
+  background: url(../img/style/link.png) no-repeat center;
+  margin-left: 5px;
+}
+.photo-gallary .gallary .hover-block a {
+  height: 42px;
+  width: 42px;
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 4px;
+}
+.photo-gallary .gallary figure:hover .hover-block {
+  display: flex;
 }
 .contact-us {
   height: 70vh;
