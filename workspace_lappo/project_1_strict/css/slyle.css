@@ -173,6 +173,7 @@ header {
 .contact-us input[type="text"],
 .contact-us input[type="email"],
 .contact-us textarea {
+  font-family: Lato;
   border-radius: 2px;
   border-style: solid;
   border-width: 1px;
@@ -227,4 +228,56 @@ footer {
 footer .copy-text {
   color: #999999;
   text-align: left;
+}
+@media screen and (max-width: 1600px) {
+  .description,
+  .point,
+  .photo-gallary,
+  .contact-us,
+  footer {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-us p,
+  .photo-gallary p {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .contact-us form {
+    width: 80%;
+  }
+  .point article p {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .call-to-action h1 {
+    font-size: 5rem;
+  }
+  footer {
+    justify-content: center;
+  }
+  footer .copy-text {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .contact-us form {
+    width: 90%;
+    align-items: center;
+  }
+  .contact-us input[type="text"],
+  .contact-us input[type="email"],
+  .contact-us textarea {
+    height: 30px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .call-to-action h1 {
+    font-size: 4rem;
+  }
+  .gallary figure img {
+    width: 100%;
+  }
 }
