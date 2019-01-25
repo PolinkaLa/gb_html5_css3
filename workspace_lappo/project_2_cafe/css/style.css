@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url(../img/style/bg.jpg) no-repeat fixed;
+  background-size: cover;
+  color: white;
+}
+.clear-fix {
+  clear: both;
+}
+header .contact-telephone {
+  float: left;
+}
+header .logo {
+  float: left;
+  width: 175px;
+  height: 148px;
+  background: url(../img/style/logo.png) no-repeat;
+}
+header nav {
+  background: url(../img/style/top_list.png) no-repeat;
+  height: 100px;
+}
+nav ul li,
+.litle-nav ul li {
+  list-style-type: none;
+  float: left;
+}
+nav ul li a,
+.litle-nav ul li a {
+  display: inline-block;
+}
+.category .daily {
+  float: left;
+}
+.category .spetials {
+  float: left;
+}
+.content .items {
+  float: left;
+}
+.content .items ul {
+  float: left;
+}
+.content .video {
+  float: left;
+}
