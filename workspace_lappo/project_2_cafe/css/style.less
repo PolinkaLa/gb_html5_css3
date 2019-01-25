@@ -12,8 +12,12 @@ body {
 header,
 main,
 footer{
-    width: 60%;
+    width: 960px;
     margin: 0 auto;
+}
+main,
+footer{
+    background: url(../img/style/paper.jpg)
 }
 .clear-fix {
     clear: both;
@@ -25,7 +29,7 @@ nav,
         float: left;
         a{
             display: inline-block;
-            margin: 20px;
+            margin: 0 20px;
             text-decoration: none;
         }
         a:hover {
@@ -36,6 +40,7 @@ nav,
 header {
     .contact-telephone {
         float: left;
+        margin-top: 57px;
         p:first-child{
             font-family: Fertigo;
             color:  #a2745a;
@@ -58,13 +63,40 @@ header {
         width: 175px;
         height: 148px;
         background: url(../img/style/logo.png) no-repeat;
+        margin-left: 169px;
+        margin-top: 10px;
+        margin-bottom: 20px
     }
     nav {
         background: url(../img/style/top_list.png) no-repeat;
-        height: 100px;
+        height: 103px;
+        padding-top: 40px;
+        ul {
+            background: url(../img/style/nav.jpg) no-repeat;
+            height: 48px;
+            width: 934px;
+            margin: 0 auto;
+            padding: 1px;
+            border-bottom: 1px dashed#513a2d;
+            border-top: 1px dashed#513a2d; 
+            li a {
+                font-family: Fertigo;
+                color:  #513a2d;
+                font-size: 0.875rem;
+                font-weight: 400;
+                line-height: 2.143;
+                text-align: center;
+                text-transform: uppercase;
+                padding-top:10px
+            }
+            li a:hover {
+                color:#af1829;
+            }
+        }     
     }
     .search {
-        float: left;
+        float: right;
+        margin-top: 57px;
     }
     .little-nav li a {
         font-family: Georgia;
