@@ -1,17 +1,55 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   background: url(../img/style/bg.jpg) no-repeat fixed;
   background-size: cover;
   color: white;
 }
+header,
+main,
+footer {
+  width: 60%;
+  margin: 0 auto;
+}
 .clear-fix {
   clear: both;
 }
+nav ul li,
+.little-nav ul li {
+  list-style-type: none;
+  float: left;
+}
+nav ul li a,
+.little-nav ul li a {
+  display: inline-block;
+  margin: 20px;
+  text-decoration: none;
+}
+nav ul li a:hover,
+.little-nav ul li a:hover {
+  text-decoration: underline;
+}
 header .contact-telephone {
   float: left;
+}
+header .contact-telephone p:first-child {
+  font-family: Fertigo;
+  color: #a2745a;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+}
+header .contact-telephone p:last-child {
+  font-family: Fertigo;
+  color: #ffd7c1;
+  font-size: 2.188rem;
+  font-weight: 400;
+  line-height: 0.857;
+  text-align: left;
 }
 header .logo {
   float: left;
@@ -23,14 +61,17 @@ header nav {
   background: url(../img/style/top_list.png) no-repeat;
   height: 100px;
 }
-nav ul li,
-.litle-nav ul li {
-  list-style-type: none;
+header .search {
   float: left;
 }
-nav ul li a,
-.litle-nav ul li a {
-  display: inline-block;
+header .little-nav li a {
+  font-family: Georgia;
+  color: #e3bba5;
+  font-size: 0.813rem;
+  font-weight: 400;
+  line-height: 2.308;
+  text-align: left;
+  margin: 10px;
 }
 .category .daily {
   float: left;
