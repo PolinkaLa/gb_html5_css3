@@ -34,10 +34,10 @@ nav,
 .little-nav {
     ul li{ 
         list-style-type: none;
-        float: left;
+        display: inline;
         a{
             display: inline-block;
-            margin: 0 20px;
+            margin: 0 15px;
             text-decoration: none;
         }
         a:hover {
@@ -91,7 +91,7 @@ header {
                 font-family: Fertigo;
                 color:  #513a2d;
                 font-size: 0.9rem;
-                font-weight: 400;
+                font-weight: 800;
                 line-height: 2.143;
                 text-align: center;
                 text-transform: uppercase;
@@ -130,7 +130,7 @@ header {
         font-family: Georgia;
         color:  #e3bba5;
         font-size: 0.813rem;
-        font-weight: 400;
+        font-weight: 800;
         line-height: 2.308;
         text-align: left;
         
@@ -202,7 +202,7 @@ main{
             font-family: Georgia;
             color:  #513a2d;
             font-size: 0.813rem;
-            font-weight: 400;
+            font-weight: 800;
             text-align: left;
             margin-right: 31px;
             margin-left: 37px;
@@ -227,13 +227,136 @@ main{
 }
 
 .content {
+    width: 888px;
+    height: 277px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 48px;
+    background: #f1e3da;
+    h2 {
+        font-family: Fertigo;
+        color:  #af182a;
+        font-size: 1.25rem;
+        font-weight: 400;
+        line-height: 1.5;
+        text-transform: uppercase; 
+        margin-top: 18px;
+        margin-bottom: 30px;
+    }
     .items {
         float: left;
+        h2 {
+            background: url(../img/style/menu.png) no-repeat 29px;
+            padding-left:  57px;
+        }
         ul {
             float: left;
+            margin-left: 27px;
+            li {
+                font-family: Georgia;
+                color:  #513a2d;
+                font-size: 0.813rem;
+                font-weight: 800;
+                line-height: 1.538;
+                text-align: left;
+                list-style-type: none
+            }
         }
     }
     .video {
         float: left;
+        margin-left: 45px;
+        h2 {
+            background: url(../img/style/video.png) no-repeat;
+            padding-left:  30px;
+        }
+        a {
+            font-family: Georgia;
+            color:  #af182a;
+            font-size: 0.813rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.385;
+            text-align: left;
+            text-decoration: none;
+        }
+        video {
+            width: 278px;
+            height: 151px;
+            margin-bottom: 15px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+    .quote {
+        float: right;
+        width:270px;
+        margin-right: 15px;
+        h2 {
+            background: url(../img/style/quote.png) no-repeat 0 7px;
+            padding-left:  30px;
+        }
+        blockquote {
+            font-family: Georgia;
+            color:  #513a2d;
+            font-size: 0.813rem;
+            font-style: italic;
+            line-height: 1.385;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        cite {
+            font-family: Georgia;
+            color:  #513a2d;
+            font-size: 0.813rem;
+            font-weight: 700;
+            font-style: italic;
+            line-height: 1.385;
+            text-align: left; 
+        }
+    }
+}
+.social-net {
+    text-align: center;
+    margin-top: 55px;
+    padding-bottom: 27px;
+    ul li {
+        list-style-type: none;
+        display: inline;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+    a {
+        display:  inline-block; 
+    }
+    a:active {
+        outline: 1px solid #513a2d;
+    }
+}
+footer {
+    .container{
+        margin: 0 auto;
+        width: 888px;
+        height: 87px;
+        background: #a17459;
+        padding-top: 20px
+
+    }
+    ul{
+        text-align: center;
+    }
+    ul li a, 
+    .copy-text {
+        font-family: Georgia;
+        color:  #e2baa4;
+        font-size: 0.75rem;
+        font-weight: 400;
+        line-height: 2;
+        text-align: center;
+        text-decoration: none;
+    }
+    span {
+        color:  #f4e5dc; 
     }
 }
