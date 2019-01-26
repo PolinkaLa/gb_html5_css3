@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Fertigo;
+  src: url(../fonts/Fertigo_PRO-webfont.ttf);
+}
+@font-face {
+  font-family: Georgia;
+  src: url(../fonts/Georgia.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -82,7 +90,7 @@ header nav ul {
 header nav ul li a {
   font-family: Fertigo;
   color: #513a2d;
-  font-size: 0.875rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 2.143;
   text-align: center;
@@ -105,11 +113,87 @@ header .little-nav li a {
   text-align: left;
   margin: 10px;
 }
+h1 {
+  float: left;
+  font-family: Fertigo;
+  color: #ca9f06;
+  font-size: 3.75rem;
+  font-weight: 400;
+  line-height: 0.833;
+  text-align: center;
+  text-shadow: 0px 2px 4.85px rgba(183, 70, 28, 0.5);
+  margin-top: 77px;
+  margin-left: 25px;
+}
+.banner {
+  background: url(../img/style/banner.png);
+  height: 359px;
+  width: 888px;
+  margin: 0 auto;
+}
+.banner a.btn {
+  width: 156px;
+  height: 43px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: block;
+  font-family: Fertigo;
+  color: #3c2219;
+  font-size: 1.563rem;
+  font-weight: 400;
+  line-height: 1.6;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 34px;
+  margin-left: 90px;
+}
+.banner a.btn:active {
+  background: #ffd7c1;
+}
+.category article {
+  width: 282px;
+  height: 296px;
+}
+.category article h2 {
+  font-family: Fertigo;
+  color: #af1829;
+  font-size: 2.188rem;
+  font-weight: 400;
+  line-height: 0.857;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 13px;
+  margin-top: 13px;
+}
+.category article img {
+  display: block;
+  margin: 0 auto;
+}
+.category article p {
+  margin-bottom: 10px;
+  font-family: Georgia;
+  color: #513a2d;
+  font-size: 0.813rem;
+  font-weight: 400;
+  text-align: left;
+  margin-right: 31px;
+  margin-left: 37px;
+  margin-top: 16px;
+}
 .category .daily {
   float: left;
+  background: url(../img/style/yellow-pep.png) no-repeat;
+  margin-left: 36px;
 }
 .category .spetials {
   float: left;
+  background: url(../img/style/red-pep.png) no-repeat;
+  margin-left: 21px;
+}
+.category .catering {
+  float: right;
+  background: url(../img/style/green-pep.png) no-repeat;
+  margin-right: 39px;
 }
 .content .items {
   float: left;
