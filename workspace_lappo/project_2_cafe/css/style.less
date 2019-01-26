@@ -105,6 +105,26 @@ header {
     .search {
         float: right;
         margin-top: 57px;
+        input {
+            background: rgba(16, 7, 4, 0.7) url(../img/style/search.png) no-repeat 220px; ;
+            width: 252px;
+            height: 38px;
+            border: 1px solid #7e3b18;
+            border-radius: 6px;
+            padding-left: 15px;
+        }
+        input::placeholder {
+            font-family: Georgia;
+            color:  #a2745a;
+            font-size: 0.813rem;
+            font-weight: 400;
+            line-height: 2.308;
+            text-align: left;
+        }
+        input:focus,
+        input:active{
+            outline: 1px solid #a2745a;
+        }
     }
     .little-nav li a {
         font-family: Georgia;
