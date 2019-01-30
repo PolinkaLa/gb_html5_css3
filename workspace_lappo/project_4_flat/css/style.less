@@ -49,17 +49,83 @@ header {
 }
 main {
     .content {
-        width: 80%;
+        width: 70%;
         display: flex;
         margin: 0 auto;
         padding-top: 7vh;
     }
     section.carusel {
         height: 93vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        div {
+            display: flex;
+        }
+        div:first-child,
+        div:last-child {
+            // margin-left: 90px;
+        }
+        img{
+            display: block;
+            width: 180px;
+            height: 206px;
+            background: rebeccapurple;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+        
     }
     section.about {
         height: 50vh;
         background:  #2eb398;
+        .content {
+            justify-content: space-around;
+        }
+        img{
+            display: block;
+            width: 180px;
+            height: 206px;
+            background: rebeccapurple;
+            clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+        article {
+            width: 60%;
+        }
+        h2 {
+            font-family: MavenProRegular;
+            color:  #d8fcf5;
+            font-size: 1.875rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+        h3 {
+            font-family: MavenProRegular;
+            color:  #1f816d;
+            font-size: 1.125rem;
+            font-weight: 400;
+            text-align: justify;
+        }
+        p {
+            padding-top: 2vh;
+            font-family: Lato;
+            color:  #d7fcf5;
+            font-size: 1rem;
+            font-weight: 400;  
+            text-align: justify;
+            a {
+                text-decoration: none;
+                color: rgb(165, 220, 213);
+                font-size: 1.5rem;
+            }
+            a:hover {
+                color: rgb(108, 204, 191)
+            }
+        }
+        p:last-child{
+            text-align: right
+        }
     }
     section.touch {
         h2 {
@@ -81,9 +147,7 @@ main {
         }
         height: 80vh;
         background:  #323232;
-        
-        // flex-direction: row;
-        // justify-content: space-around;
+
         article:first-child {
             width: 50%;
         }
@@ -136,9 +200,8 @@ main {
             p {
                 font-family: Lato;
                 color:  #bebebe;
-                font-size: 0.75rem;
+                font-size: 1rem;
                 font-weight: 700;
-                line-height: 1.797;
                 text-align: justify;
             }
         }
