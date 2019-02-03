@@ -50,7 +50,7 @@ header {
 }
 main {
     .content {
-        width: 70%;
+        width: 60%;
         display: flex;
         margin: 0 auto;
         padding-top: 7vh;
@@ -73,8 +73,9 @@ main {
             display: block;
             width: 180px;
             height: 206px;
-            background: rebeccapurple;
             clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+            margin-left:20px;
+            margin-right: 20px;
         }
         
     }
@@ -88,7 +89,6 @@ main {
             display: block;
             width: 180px;
             height: 206px;
-            background: rebeccapurple;
             clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
         }
         article {
@@ -149,12 +149,7 @@ main {
         height: 80vh;
         background:  #323232;
 
-        article:first-child {
-            width: 50%;
-        }
-        article:last-child {
-            width: 20%
-        }
+        
         article {
             display: flex;
             flex-direction: column;
@@ -196,6 +191,8 @@ main {
                 }
                 textarea {
                     height: 20vh;
+                    resize: none;
+                    padding-top: 10px;
                 } 
             }
             p {
@@ -204,6 +201,23 @@ main {
                 font-size: 1rem;
                 font-weight: 700;
                 text-align: justify;
+            }
+        }
+        article:first-child {
+            width: 50%;
+        }
+        article:last-child {
+            justify-content: flex-start;
+            margin-top: calc(3rem + 2vh);
+            width: 20%;
+            p {
+                margin-bottom: 20px
+            }
+            p i {
+                color:#2eb398;
+            }
+            p:first-child {
+                margin-bottom: 50px
             }
         }
     }
