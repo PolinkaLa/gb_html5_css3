@@ -72,6 +72,46 @@ main section.carusel img {
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   margin-left: 20px;
   margin-right: 20px;
+  transition: all 2s ease-out;
+}
+main section.carusel img:hover {
+  transform: scale(1.2);
+  animation: anim 2s infinite;
+}
+@keyframes anim {
+  0% {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  10% {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
+  20% {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  30% {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+  40% {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
+  50% {
+    clip-path: circle(50% at 50% 50%);
+  }
+  60% {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+  }
+  70% {
+    clip-path: polygon(50% 0%, 83% 12%, 100% 43%, 94% 78%, 68% 100%, 32% 100%, 6% 78%, 0% 43%, 17% 12%);
+  }
+  80% {
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+  }
+  90% {
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  }
+  100% {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
 }
 main section.about {
   height: 50vh;
@@ -85,6 +125,10 @@ main section.about img {
   width: 180px;
   height: 206px;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  transition: all 2s ease-out;
+}
+main section.about img:hover {
+  transform: scale(1.2);
 }
 main section.about article {
   width: 60%;
@@ -95,6 +139,10 @@ main section.about h2 {
   font-size: 1.875rem;
   font-weight: 400;
   text-align: justify;
+  width: 40em;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 5s steps(50, end);
 }
 main section.about h3 {
   font-family: MavenProRegular;
@@ -102,6 +150,11 @@ main section.about h3 {
   font-size: 1.125rem;
   font-weight: 400;
   text-align: justify;
+}
+@keyframes type {
+  from {
+    width: 0;
+  }
 }
 main section.about p {
   padding-top: 2vh;
