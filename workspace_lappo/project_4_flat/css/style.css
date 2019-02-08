@@ -8,17 +8,9 @@
 *:focus {
   outline: 1px solid #ffffff;
 }
-body {
-  overflow-x: hidden;
-}
 header {
-  transition: all 2s ease-out;
-  max-width: 100%;
   height: 7vh;
   background: #323232;
-}
-header nav ul:after {
-  content: "";
 }
 header nav ul {
   display: flex;
@@ -40,7 +32,6 @@ header nav ul li a {
   font-weight: 700;
   text-transform: uppercase;
   display: inline-block;
-  transition: all 2s ease-out;
 }
 header nav ul li .logo {
   background: url(../img/Logo.png) no-repeat;
@@ -48,7 +39,6 @@ header nav ul li .logo {
   height: 89px;
   margin-top: 1rem;
   background-size: cover;
-  transition: all 2s ease-out;
 }
 header nav ul li a:hover {
   color: #2eb398;
@@ -59,10 +49,10 @@ main .content {
   margin: 0 auto;
   padding-top: 7vh;
   transition: all 2s ease-out;
+  overflow-x: hidden;
 }
 main section.carusel {
   height: fit-content;
-  max-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,7 +114,6 @@ main section.carusel img:hover {
 }
 main section.about {
   height: fit-content;
-  max-width: 100vw;
   background: #2eb398;
 }
 main section.about .content {
